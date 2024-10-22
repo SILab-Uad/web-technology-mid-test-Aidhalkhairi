@@ -9,10 +9,10 @@ body {
 
 .container {
     text-align: center;
-    padding: 30px;
-    background-color: #ffffff; /* Background color for container */
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white; /* Background color for container */
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.644);
     width: 90%;
     max-width: 400px;
 }
@@ -21,7 +21,24 @@ body {
 h1 {
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: #4a4a4a; /* Header color */
+    color: black; /* Header color */
+}
+
+input[type="number"], input[type="checkbox"] {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #008cffb5;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1200b3a5;
 }
 
 /* Add more styles here as needed */
