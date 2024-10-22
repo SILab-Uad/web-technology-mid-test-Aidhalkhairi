@@ -1,6 +1,6 @@
 // TODO: Implement the password generation logic based on user input
 
-const generatePassword = (length, options) => {
+export const generatePassword = (length, options) => {
     // Character sets for password generation
     const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowercase = "abcdefghijklmnopqrstuvwxyz";
@@ -29,23 +29,23 @@ const generatePassword = (length, options) => {
     return password;
 };
 
-    // TODO: Add event listener to the button to call generatePassword and display the output
-document.getElementById("generateButton").addEventListener("click", () => {
-    const length =
-parseInt(document.getElementById("length").value);
-    const options = {
-        includeUppercase:
-document.getElementById("uppercase").Checked,
-        includeLowercase:
-document.getElementById("lowercase").Checked,
-        includeNumbers:
-document.getElementById("numbers").Checked,
-        includeSpecialChars:
-document.getElementById("specialChars").Checked
-    };
+//     // TODO: Add event listener to the button to call generatePassword and display the output
+// document.getElementById("generateButton").addEventListener("click", () => {
+//     const length =
+// parseInt(document.getElementById("length").value);
+//     const options = {
+//         includeUppercase:
+// document.getElementById("uppercase").Checked,
+//         includeLowercase:
+// document.getElementById("lowercase").Checked,
+//         includeNumbers:
+// document.getElementById("numbers").Checked,
+//         includeSpecialChars:
+// document.getElementById("specialChars").Checked
+//     };
 
-    const password = generatePassword(length, options);
-    document.getElementById("passwordOutput").innerText =
-password;
-    });    
-// BONUS: Implement the copy to clipboard functionality
+//     const password = generatePassword(length, options);
+//     document.getElementById("passwordOutput").innerText =
+// password;
+//     });    
+// // BONUS: Implement the copy to clipboard functionality
